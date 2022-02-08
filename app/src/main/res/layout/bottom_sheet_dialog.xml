@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="SELECT AN OPTION"
+        android:layout_marginBottom="20dp"
+        android:background="#DDDDDD"
+        android:textSize="16sp" android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="OPTION 1"
+        android:id="@+id/button_option_1"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/button_option_2"
+        android:text="OPTION 2"
+        android:textColor="#ec3e7b"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

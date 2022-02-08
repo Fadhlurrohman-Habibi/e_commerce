@@ -1,0 +1,145 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coba.example.astimen.mymaterialdesign.fragment.frg_option_check">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_idrec_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_idrec_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:maxLength="17"
+                android:hint="@string/idrec_auto" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_check_ridding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_idrec_option">
+
+        <CheckBox
+            android:id="@+id/input_check_ridding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:ems="7"
+            android:text="Ridding"/>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_check_archery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_idrec_option"
+            android:layout_toRightOf="@+id/input_layout_check_ridding">
+
+            <CheckBox
+                android:id="@+id/input_check_archery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:ems="7"
+                android:text="Archery"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_check_swimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_idrec_option"
+            android:layout_toRightOf="@+id/input_layout_check_archery">
+            <CheckBox
+                android:id="@+id/input_check_swimming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:ems="7"
+                android:text="Swimming"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <RadioGroup
+            android:id="@+id/input_layout_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/input_layout_check_ridding">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_option_female"
+                    android:ems="7"
+                    android:text="Female"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/input_option_male"
+                    android:ems="7"
+                    android:text="Male"/>
+
+
+        </RadioGroup>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/input_switch"
+            android:layout_below="@+id/input_layout_option"
+            android:text="Enabled"
+            android:checked="true"
+            android:layout_marginLeft="5dp"
+            android:ems="9"/>
+
+        <Button
+            android:id="@+id/input_button_new_record_option"
+            android:layout_below="@+id/input_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:ems="7"
+            android:hint="@string/button_new" />
+
+        <Button
+            android:id="@+id/input_button_save_option"
+            android:layout_below="@+id/input_switch"
+            android:layout_toRightOf="@+id/input_button_new_record_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="7"
+            android:hint="@string/button_save" />
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coba.example.astimen.mymaterialdesign.fragment.frg_date_picker">\
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <EditText
+                    android:id="@+id/input_tanggal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:maxLength="12"
+                    android:ems="12"
+                    android:hint="Tanggal" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/button_date_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Set Date"
+                android:layout_below="@id/input_layout_tanggal"/>
+
+            <Button
+                android:id="@+id/button_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Dialog"
+                android:layout_below="@id/button_date_picker"/>
+
+            <Button
+                android:id="@+id/button_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Pilihan"
+                android:layout_below="@id/button_dialog"/>
+
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

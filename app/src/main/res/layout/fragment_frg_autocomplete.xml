@@ -1,0 +1,129 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.coba.example.astimen.mymaterialdesign.fragment.frg_autocomplete">
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_idrec_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_idrec_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:maxLength="17"
+                    android:hint="@string/idrec_auto" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_hobby_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_idrec_auto">
+
+                <AutoCompleteTextView
+                    android:id="@+id/input_hobby_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/hobby_auto" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_hobby_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_hobby_auto">
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobby_spinner"/>
+                <Spinner
+                    android:id="@+id/input_hobby_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/search_list"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_button_new_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_hobby_spinner">
+
+                <Button
+                    android:id="@+id/input_button_new_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/button_new_auto" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_button_save_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_button_new_auto">
+
+                <Button
+                    android:id="@+id/input_button_save_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/button_save_auto" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_button_show_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_layout_button_save_auto">
+
+                <Button
+                    android:id="@+id/input_button_show_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/button_show_auto" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_image_auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/input_layout_button_show_auto">
+
+                <ImageView
+                    android:id="@+id/input_image_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:src="@drawable/ic_menu_camera"
+                    android:hint="@string/image_auto" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+
+</FrameLayout>
